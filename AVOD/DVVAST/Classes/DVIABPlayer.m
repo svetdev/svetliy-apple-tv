@@ -119,6 +119,21 @@ NSString *const DVIABPlayerErrorDomain = @"DVIABPlayerErrorDomain";
     }
 }
 
+- (void)setCurrentInlineAdPlayerItem:(AVPlayerItem *)currentInlineAdPlayerItem {
+    if (_currentInlineAdPlayerItem != nil) {
+        [self.currentInlineAdPlayerItem removeObserver:self forKeyPath:@"status"];
+    }
+    
+    if (currentInlineAdPlayerItem != nil) {
+        [currentInlineAdPlayerItem addObserver:self
+                                    forKeyPath:@"status"
+                                       options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+                                       context:DVIABPlayerInlineAdPlayerItemStatusObservationContext];
+    }
+    
+    _currentInlineAdPlayerItem = currentInlineAdPlayerItem;
+}
+
 - (void)contentPlayerItemDidReachEnd:(NSNotification *)notification
 {
     VLogC();
@@ -346,10 +361,6 @@ NSString *const DVIABPlayerErrorDomain = @"DVIABPlayerErrorDomain";
                                              selector:@selector(inlineAdPlayerItemDidFailToReachEnd:)
                                                  name:AVPlayerItemFailedToPlayToEndTimeNotification
                                                object:playerItem];
-    [playerItem addObserver:self
-                 forKeyPath:@"status"
-                    options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
-                    context:DVIABPlayerInlineAdPlayerItemStatusObservationContext];
     
     self.currentInlineAdPlayerItem = playerItem;
     
@@ -430,8 +441,6 @@ NSString *const DVIABPlayerErrorDomain = @"DVIABPlayerErrorDomain";
         [[NSNotificationCenter defaultCenter] removeObserver:self
                                                         name:AVPlayerItemFailedToPlayToEndTimeNotification
                                                       object:playerItem];
-        [playerItem removeObserver:self forKeyPath:@"status"
-                           context:DVIABPlayerInlineAdPlayerItemStatusObservationContext];
     }
     
     [self startAdsFromQueue];

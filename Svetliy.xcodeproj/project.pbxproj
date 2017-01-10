@@ -405,7 +405,7 @@
 					F553AD1F1BC660B400A093EF = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 66JU87JGLE;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -604,6 +604,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVOD/DVVAST-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VAST_LOG = YES;
@@ -645,6 +646,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVOD/DVVAST-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -667,7 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zype.Svetliy;
 				PRODUCT_NAME = Svetliy;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -686,7 +688,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zype.Svetliy;
 				PRODUCT_NAME = Svetliy;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

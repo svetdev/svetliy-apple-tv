@@ -12,11 +12,11 @@ import ZypeAppleTVBase
 
 class Const: NSObject {
 
-  static let sdkSettings = SettingsModel(clientID: "",
-    secret: "",
+  static let sdkSettings = SettingsModel(clientID: "b3589bcfffad139cd61be701ce30928c118c12730af3c462c5c1e884e8944e03",
+    secret: "3da57d2c71655d9309811d2f4bfc0191d15d33659f7a84e02f87d15edc60a372",
     appKey: "IKuC8xERY-oYRxQfE6c1HSeRrxKcpCwcsPr614RfaxCkYsJLgwpBkpkEo88EsyWr",
-    apiDomain:"https://api.zype.com",
-    tokenDomain: "https://login.zype.com",
+    apiDomain:"https://api.uat.zype.com",
+    tokenDomain: "https://login.uat.zype.com",
     userAgent: "zype tvos")
 
 

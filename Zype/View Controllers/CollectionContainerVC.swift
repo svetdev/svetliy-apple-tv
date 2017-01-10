@@ -25,10 +25,10 @@ class FavoriteCollectionItem: CollectionLabeledItem {
     let queryModel = QueryVideosModel()
     queryModel.videoID = self.videoID
     ZypeAppleTVBase.sharedInstance.getVideos(queryModel, completion: {(videos: Array<VideoModel>?, error: NSError?) in
-      if let _ = videos where videos!.count > 0 {
+      if let _ = videos, videos!.count > 0 {
         let video = videos!.first! as VideoModel
         self.object = video
-        self.imageURL = video.thumbnailURL()
+        self.imageURL = video.thumbnailURL() as URL!
         self.title = video.titleString
       }
     })
@@ -40,7 +40,7 @@ class VideoCollectionItem: CollectionLabeledItem {
   init(video: VideoModel) {
     super.init()
     self.title = video.titleString
-    self.imageURL = video.thumbnailURL()
+    self.imageURL = video.thumbnailURL() as URL!
     self.object = video
   }
   
@@ -65,7 +65,7 @@ class PagerCollectionItem: CollectionLabeledItem {
   init(object: ZobjectModel) {
     super.init()
     if(object.pictures.count > 0) {
-      self.imageURL = NSURL(string: object.pictures.first!.url)
+      self.imageURL = NSURL(string: object.pictures.first!.url) as URL!
     }
     self.object = object
   }
@@ -82,11 +82,21 @@ class ShowCollectionItem: CollectionLabeledItem {
 
 extension UIViewController {
   
-  func playVideo(model: VideoModel, playlist: Array<VideoModel>? = nil) {
-      let playerVC = self.storyboard?.instantiateViewControllerWithIdentifier("PlayerVC") as! PlayerVC
-      playerVC.currentVideo = model
-      playerVC.playlist = playlist
-      self.presentViewController(playerVC, animated: true, completion: nil)
+  func playVideo(_ model: VideoModel, playlist: Array<VideoModel>? = nil) {
+    if (model.onAir) {
+        
+    } else {
+        //check for video with subscription
+        if (model.subscriptionRequired && !ZypeUtilities.isDeviceLinked()) {
+            ZypeUtilities.presentLoginVC(self)
+            return
+        }
+    }
+    
+    let playerVC = self.storyboard?.instantiateViewController(withIdentifier: "PlayerVC") as! PlayerVC
+    playerVC.currentVideo = model
+    playerVC.playlist = playlist
+    self.present(playerVC, animated: true, completion: nil)
   }
   
 }
@@ -113,37 +123,38 @@ class CollectionContainerVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     for vc in self.childViewControllers {
-      if(vc.isKindOfClass(BaseCollectionVC)) {
+      if(vc.isKind(of: BaseCollectionVC.self)) {
         self.collectionVC = vc as! BaseCollectionVC
         break
       }
     }
   }
   
-  static func videosToCollectionItems(videos: Array<VideoModel>?) -> Array<CollectionLabeledItem> {
+  static func videosToCollectionItems(_ videos: Array<VideoModel>?) -> Array<CollectionLabeledItem> {
     return self.modelsToCollectionItems(videos)
   }
   
-  static func featuresToCollectionItems(features: Array<ZobjectModel>?) -> Array<CollectionLabeledItem> {
+  static func featuresToCollectionItems(_ features: Array<ZobjectModel>?) -> Array<CollectionLabeledItem> {
     return self.modelsToCollectionItems(features)
   }
   
-  static func categoryValuesToCollectionItems(values: Array<PlaylistModel>?) -> Array<CollectionLabeledItem> {
+  static func categoryValuesToCollectionItems(_ values: Array<PlaylistModel>?) -> Array<CollectionLabeledItem> {
     return self.modelsToCollectionItems(values)
   }
   
-  static private func modelsToCollectionItems(models: Array<BaseModel>?) -> Array<CollectionLabeledItem> {
+  static fileprivate func modelsToCollectionItems(_ models: Array<BaseModel>?) -> Array<CollectionLabeledItem> {
     var result = [CollectionLabeledItem]()
     if(models == nil) {
       return result
     }
     for model in models! {
       var mapped: CollectionLabeledItem!
-      if(model.isKindOfClass(VideoModel)) {
+        
+      if(model is VideoModel) {
         mapped = VideoCollectionItem(video: model as! VideoModel)
-      } else if(model.isKindOfClass(PlaylistModel)) {
+      } else if(model is PlaylistModel) {
         mapped = ShowCollectionItem(value: model as! PlaylistModel)
-      } else if(model.isKindOfClass(ZobjectModel)) {
+      } else if(model is ZobjectModel) {
         mapped = PagerCollectionItem(object: model as! ZobjectModel)
       }
       if(mapped != nil) {
@@ -153,7 +164,7 @@ class CollectionContainerVC: UIViewController {
     return result
   }
   
-  func onItemFocused(item: CollectionLabeledItem, section: CollectionSection?){}
-  func onItemSelected(item: CollectionLabeledItem, section: CollectionSection?){}
+  func onItemFocused(_ item: CollectionLabeledItem, section: CollectionSection?){}
+  func onItemSelected(_ item: CollectionLabeledItem, section: CollectionSection?){}
   
 }

@@ -315,7 +315,7 @@ extension BaseCollectionVC {
     self.lastSelectedItemIndexPath = indexPath
     if(self.itemSelectedCallback != nil){
       let section = self.sections[indexPath.section]
-      self.itemSelectedCallback(item: section.items[self.isInfinityScrolling ? (indexPath.row % section.items.count) : indexPath.row], section: section)
+      self.itemSelectedCallback(section.items[self.isInfinityScrolling ? (indexPath.row % section.items.count) : indexPath.row], section)
     }
   }
   
@@ -329,7 +329,7 @@ extension BaseCollectionVC {
       let indexPath = context.nextFocusedIndexPath
       if(indexPath != nil && self.sections[indexPath!.section].items.count > 0){
         let section = self.sections[indexPath!.section]
-        itemFocusedCallback(item: section.items[self.isInfinityScrolling ? (indexPath!.row % section.items.count) : indexPath!.row], section: section)
+        self.itemFocusedCallback(section.items[self.isInfinityScrolling ? (indexPath!.row % section.items.count) : indexPath!.row], section)
       }
     }
   }

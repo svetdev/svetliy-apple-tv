@@ -42,7 +42,7 @@
         <!--SearchVC-->
         <scene sceneID="nBv-Zg-8D2">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" modalTransitionStyle="crossDissolve" id="iVJ-rO-YcO" customClass="SearchVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" modalTransitionStyle="crossDissolve" id="iVJ-rO-YcO" customClass="SearchVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8yg-r8-s7K">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,12 +73,12 @@
         <!--FavoritesVC-->
         <scene sceneID="5Mc-sa-hcA">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Teu-ca-loB" customClass="FavoritesVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Teu-ca-loB" customClass="FavoritesVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fro-XQ-biX">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please LogIn to get Favorites list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="usN-mc-95a" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please LogIn to get Favorites list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="usN-mc-95a" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -112,7 +112,7 @@
         <!--Tab BarVC-->
         <scene sceneID="tUh-MA-OMl">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarVC" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="cZF-Ut-RTH" customClass="TabBarVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="cZF-Ut-RTH" customClass="TabBarVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedTabBarMetrics key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YxL-xQ-lzN">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="140"/>
@@ -132,7 +132,7 @@
         <!--Modal ProgressVC-->
         <scene sceneID="Ol8-xW-Fcc">
             <objects>
-                <viewController storyboardIdentifier="ModalProgressVC" id="ikl-2V-gb6" customClass="ModalProgressVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalProgressVC" id="ikl-2V-gb6" customClass="ModalProgressVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mui-UI-Nkg">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +144,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1EZ-nD-Dl2" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1EZ-nD-Dl2" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="484" height="94"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -179,7 +179,7 @@
         <!--Scrollable Text AlertVC-->
         <scene sceneID="73p-E4-NMb">
             <objects>
-                <viewController storyboardIdentifier="ScrollableTextAlertVC" automaticallyAdjustsScrollViewInsets="NO" id="b0p-De-89k" customClass="ScrollableTextAlertVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScrollableTextAlertVC" automaticallyAdjustsScrollViewInsets="NO" id="b0p-De-89k" customClass="ScrollableTextAlertVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qok-vI-6H6">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,7 +212,7 @@
         <!--Show DetailsVC-->
         <scene sceneID="Vld-u9-x4h">
             <objects>
-                <viewController storyboardIdentifier="ShowDetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="QVW-Vl-rtx" customClass="ShowDetailsVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowDetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="QVW-Vl-rtx" customClass="ShowDetailsVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly7-0E-dRD">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
                                         <rect key="frame" x="100" y="121" width="820" height="315"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e12-YQ-hF7" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e12-YQ-hF7" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="0.0" width="810" height="63"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
@@ -237,7 +237,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wkv-cB-oiB" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wkv-cB-oiB" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="63" width="810" height="82"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -249,7 +249,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <view contentMode="scaleToFill" id="4To-KK-0YS" customClass="FocusableView" customModule="Entrepreneur" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" id="4To-KK-0YS" customClass="FocusableView" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="169" width="820" height="146"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -268,7 +268,7 @@
                                         <rect key="frame" x="110" y="444" width="1780" height="129"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gr6-o5-BOz" customClass="FocusableButton" customModule="Entrepreneur" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gr6-o5-BOz" customClass="FocusableButton" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="10" width="150" height="84"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Subscribe"/>
@@ -276,7 +276,7 @@
                                                     <action selector="onSubscribe:" destination="QVW-Vl-rtx" eventType="primaryActionTriggered" id="i30-9K-87D"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="kB2-gZ-9oS" customClass="FocusableButton" customModule="Entrepreneur" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="kB2-gZ-9oS" customClass="FocusableButton" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="170" y="10" width="150" height="84"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,7 +285,7 @@
                                                     <action selector="onFavorites:" destination="QVW-Vl-rtx" eventType="primaryActionTriggered" id="G7L-Ga-Lct"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTn-j7-y56" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTn-j7-y56" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="100" width="150" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -298,7 +298,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dSI-Rh-6hd" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dSI-Rh-6hd" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                                 <rect key="frame" x="170" y="100" width="150" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -313,7 +313,7 @@
                                             </label>
                                         </subviews>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="cDg-pl-fwV" customClass="URLImageView" customModule="Entrepreneur" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="cDg-pl-fwV" customClass="URLImageView" customModule="AppleTVApp" customModuleProvider="target">
                                         <rect key="frame" x="1020" y="121" width="800" height="452"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                                     <segue destination="6Pp-yV-woX" kind="embed" id="a18-Ts-CvM"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6lY-nt-SuW" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6lY-nt-SuW" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="658" width="571" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -367,7 +367,7 @@
         <!--HomeVC-->
         <scene sceneID="hpN-Og-wkj">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="e6U-ja-SND" customClass="HomeVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="e6U-ja-SND" customClass="HomeVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NOl-ef-c1s">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,7 +376,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please LogIn to get Favorites list" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUA-WI-o1T" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please LogIn to get Favorites list" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUA-WI-o1T" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                         <rect key="frame" x="460" y="0.0" width="1000" height="1080"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -426,7 +426,7 @@
         <!--Base CollectionVC-->
         <scene sceneID="AKE-fp-1PD">
             <objects>
-                <collectionViewController storyboardIdentifier="BaseCollectionVC" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="6Pp-yV-woX" customClass="BaseCollectionVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="BaseCollectionVC" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="6Pp-yV-woX" customClass="BaseCollectionVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CX6-6d-zQs">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,14 +441,14 @@
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PagerCell" id="fvq-qC-BVZ" customClass="PagerCell" customModule="Entrepreneur" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PagerCell" id="fvq-qC-BVZ" customClass="PagerCell" customModule="AppleTVApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="45" width="500" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" id="awk-V3-Fs5" customClass="URLImageView" customModule="Entrepreneur" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" id="awk-V3-Fs5" customClass="URLImageView" customModule="AppleTVApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
@@ -459,18 +459,18 @@
                                     <outlet property="imageView" destination="awk-V3-Fs5" id="Y9u-hx-XAN"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="b7a-kj-grq" customClass="ImageCell" customModule="Entrepreneur" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="b7a-kj-grq" customClass="ImageCell" customModule="AppleTVApp" customModuleProvider="target">
                                 <rect key="frame" x="1420" y="45" width="500" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" id="fuT-eh-Lml" customClass="URLImageView" customModule="Entrepreneur" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" id="fuT-eh-Lml" customClass="URLImageView" customModule="AppleTVApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="455"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="adT-Wt-FvD" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="adT-Wt-FvD" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                             <rect key="frame" x="8" y="454" width="484" height="46"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -490,7 +490,7 @@
                                     <outlet property="label" destination="adT-Wt-FvD" id="eXl-Vc-TwH"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ControllerCell" id="Adw-a8-YCY" customClass="ControllerCell" customModule="Entrepreneur" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ControllerCell" id="Adw-a8-YCY" customClass="ControllerCell" customModule="AppleTVApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="555" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -501,11 +501,11 @@
                                 <size key="customSize" width="1920" height="1080"/>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="tqX-PM-AmK" customClass="HeaderCell" customModule="Entrepreneur" customModuleProvider="target">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="tqX-PM-AmK" customClass="HeaderCell" customModule="AppleTVApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="1920" height="45"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shows" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mjn-Tp-JNC" customClass="StyledLabel" customModule="Entrepreneur" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shows" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mjn-Tp-JNC" customClass="StyledLabel" customModule="AppleTVApp" customModuleProvider="target">
                                     <rect key="frame" x="90" y="0.0" width="1740" height="45"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -539,7 +539,7 @@
         <!--AV Player View Controller-->
         <scene sceneID="z39-of-MwK">
             <objects>
-                <avPlayerViewController storyboardIdentifier="PlayerVC" automaticallyAdjustsScrollViewInsets="NO" videoGravity="AVLayerVideoGravityResizeAspect" id="9o9-Bw-tKR" customClass="PlayerVC" customModule="Entrepreneur" customModuleProvider="target" sceneMemberID="viewController">
+                <avPlayerViewController storyboardIdentifier="PlayerVC" automaticallyAdjustsScrollViewInsets="NO" videoGravity="AVLayerVideoGravityResizeAspect" id="9o9-Bw-tKR" customClass="PlayerVC" customModule="AppleTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </avPlayerViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAL-HP-Y0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

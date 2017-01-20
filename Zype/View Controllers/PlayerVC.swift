@@ -443,17 +443,18 @@ class PlayerVC: UIViewController, DVIABPlayerDelegate
         //print(playerObject?.json ?? <#default value#>)
         if let body = playerObject?.json?["response"]?["body"] as? NSDictionary
         {
-            let advertising = body["advertising"] as! NSDictionary
-            let schedule = advertising["schedule"] as? NSArray
-            
-            self.adsData = [adObject]()
-            
-            if (schedule != nil) {
-                for i in 0..<schedule!.count
-                {
-                    let adDict = schedule![i] as! NSDictionary
-                    let ad = adObject(offset: adDict["offset"] as? Double, tag:adDict["tag"] as? String)
-                    self.adsData.append(ad)
+            if let advertising = body["advertising"] as? NSDictionary{
+                let schedule = advertising["schedule"] as? NSArray
+                
+                self.adsData = [adObject]()
+                
+                if (schedule != nil) {
+                    for i in 0..<schedule!.count
+                    {
+                        let adDict = schedule![i] as! NSDictionary
+                        let ad = adObject(offset: adDict["offset"] as? Double, tag:adDict["tag"] as? String)
+                        self.adsData.append(ad)
+                    }
                 }
             }
         }
@@ -461,8 +462,8 @@ class PlayerVC: UIViewController, DVIABPlayerDelegate
         if self.adsData.count > 0
         {
             
-           /*let ad = adObject(offset: 0, tag:"https://s3.amazonaws.com/demo.jwplayer.com/advertising/assets/vast3_jw_ads.xml")
-            self.adsData.removeAll()
+            /*let ad = adObject(offset: 0, tag:"https://s3.amazonaws.com/demo.jwplayer.com/advertising/assets/vast3_jw_ads.xml")
+             self.adsData.removeAll()
              self.adsData.append(ad)*/
             
             for i in 0..<self.adsData.count

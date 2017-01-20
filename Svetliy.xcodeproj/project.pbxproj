@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03480B601ED46255B2D79E36 /* Pods_Svetliy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9126135191BF3F75F2EA564B /* Pods_Svetliy.framework */; };
 		98D8EA922EF2657F2A8A5FB7 /* Pods_Svetliy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC8F50954AF9F4DFD667473 /* Pods_Svetliy.framework */; };
+		A13DE31C1E32742D00EBBC57 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DE31B1E32742D00EBBC57 /* SplashScreenVC.swift */; };
+		A13DE31E1E32B23100EBBC57 /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DE31D1E32B23000EBBC57 /* ReplaceSegue.swift */; };
 		A1A1C2311CE5310300B34FD5 /* DVIABPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A1C20B1CE5310300B34FD5 /* DVIABPlayer.m */; };
 		A1A1C2321CE5310300B34FD5 /* DVInlineVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A1C20D1CE5310300B34FD5 /* DVInlineVideoAd.m */; };
 		A1A1C2331CE5310300B34FD5 /* DVTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A1C2101CE5310300B34FD5 /* DVTimeIntervalFormatter.m */; };
@@ -74,6 +76,8 @@
 		1CC8F50954AF9F4DFD667473 /* Pods_Svetliy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Svetliy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF81011A25250BD27AE32A6 /* Pods-Svetliy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Svetliy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Svetliy/Pods-Svetliy.debug.xcconfig"; sourceTree = "<group>"; };
 		9126135191BF3F75F2EA564B /* Pods_Svetliy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Svetliy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13DE31B1E32742D00EBBC57 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		A13DE31D1E32B23000EBBC57 /* ReplaceSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
 		A1A1C20A1CE5310300B34FD5 /* DVIABPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVIABPlayer.h; sourceTree = "<group>"; };
 		A1A1C20B1CE5310300B34FD5 /* DVIABPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVIABPlayer.m; sourceTree = "<group>"; };
 		A1A1C20C1CE5310300B34FD5 /* DVInlineVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVInlineVideoAd.h; sourceTree = "<group>"; };
@@ -330,6 +334,7 @@
 				F558AC841BD508E600D8E677 /* ScrollableTextAlertVC.swift */,
 				F5582CD11BC818CA0089E5E7 /* ShowDetailsVC.swift */,
 				F5D98CE71BE3BFBB00C986B4 /* TabBarVC.swift */,
+				A13DE31B1E32742D00EBBC57 /* SplashScreenVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				F55957DA1BD7D1B2004A01A9 /* SDKHelpers.swift */,
 				F55732131BDA4EBC00D323A0 /* Utils.swift */,
 				F55940381C048F2700A0ECFF /* FadeNavigationAnimationController.swift */,
+				A13DE31D1E32B23000EBBC57 /* ReplaceSegue.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -499,11 +505,13 @@
 				F5E6DA3F1BCEB03A00BE842B /* SearchVC.swift in Sources */,
 				F5582CD01BC7FA350089E5E7 /* ControllerCell.swift in Sources */,
 				A1A1C23D1CE5310300B34FD5 /* NSString+DDXML.m in Sources */,
+				A13DE31E1E32B23100EBBC57 /* ReplaceSegue.swift in Sources */,
 				A1A1C2331CE5310300B34FD5 /* DVTimeIntervalFormatter.m in Sources */,
 				A1A1C23C1CE5310300B34FD5 /* DDXMLElementAdditions.m in Sources */,
 				F5582CD21BC818CA0089E5E7 /* ShowDetailsVC.swift in Sources */,
 				F55957DB1BD7D1B2004A01A9 /* SDKHelpers.swift in Sources */,
 				F5534D271BCFEB8200BEA509 /* CollectionContainerVC.swift in Sources */,
+				A13DE31C1E32742D00EBBC57 /* SplashScreenVC.swift in Sources */,
 				F5D98CE81BE3BFBB00C986B4 /* TabBarVC.swift in Sources */,
 				A1A1C23F1CE5310300B34FD5 /* DDXMLDocument.m in Sources */,
 				F55940391C048F2700A0ECFF /* FadeNavigationAnimationController.swift in Sources */,

@@ -32,4 +32,10 @@ class Const: NSObject {
   static let kCollectionPagerHorizontalSpacing: CGFloat = 20.0
   static let kScrollableTextVCMaskInsets: UIEdgeInsets = UIEdgeInsets(top: 30, left: 0, bottom: 30, right: 0)
   static let kFavoritesKey = "Favorites"
+    
+    static let kDefaultsRootPlaylistId = "root_playlist_id"
+    static let kDefaultsBackgroundUrl = "background_url"
+    
+    //Segues
+    static let kShowTabBarSegueId = "ShowTabBar"
 }

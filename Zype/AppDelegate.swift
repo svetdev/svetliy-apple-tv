@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     ZypeAppleTVBase.sharedInstance.initialize(Const.sdkSettings, loadCategories: false, loadPlaylists: false, completion: {_ in})
     
-    UIButton.appearance().setTitleColor(StyledLabel.kBaseColor, for: UIControlState())
-    UIButton.appearance().setBackgroundImage(UIImage(named: "white"), for: UIControlState())
+    //UIButton.appearance().setTitleColor(StyledLabel.kBaseColor, for: UIControlState())
+    //UIButton.appearance().setBackgroundImage(UIImage(named: "white"), for: UIControlState())
     
     return true
   }

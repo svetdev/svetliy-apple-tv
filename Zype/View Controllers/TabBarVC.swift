@@ -9,27 +9,34 @@
 import UIKit
 import ZypeAppleTVBase
 
-@available(tvOS 10.0, *)
+
 class TabBarVC: UITabBarController {
-    
-    
-    
+
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.items![0].title = localized("Home.TabTitle")
         self.tabBar.items![1].title = localized("Search.TabTitle")
         self.tabBar.items![2].title = localized("Favorites.TabTitle")
         
+        setupBackgroundImage()
         
-        let background = UIImageView(frame: self.view.bounds)
-        background.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        
-        background.image = UIImage(named: "background_dark")
-        self.view.insertSubview(background, at: 0)
-        
-        self.loadDynamicData()
+        //self.loadDynamicData()
         NotificationCenter.default.addObserver(self, selector: #selector(modifyTabs), name: NSNotification.Name(rawValue: kZypeReloadScreenNotification), object: nil)
         
+    }
+    
+    func setupBackgroundImage() {
+        let background = URLImageView(frame: self.view.bounds)
+        background.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        if let backgroundUrl = UserDefaults.standard.object(forKey: Const.kDefaultsBackgroundUrl) as? String {
+            background.configWithURL(URL(string: backgroundUrl))
+
+        } else {
+            background.image = UIImage(named: "background_dark")
+        }
+        self.view.insertSubview(background, at: 0)
     }
     
     func loadDynamicData() {
@@ -41,6 +48,21 @@ class TabBarVC: UITabBarController {
             print("got back: \(result)")
             self.addLogoutScreen()
         }
+        loadAppInfo()
+    }
+    
+    
+    func loadAppInfo() {
+        ZypeAppleTVBase.sharedInstance.getAppInfo(QueryBaseModel(), completion: {(url, featuredPlaylistId, error) in
+            if (featuredPlaylistId != nil) {
+                UserDefaults.standard.set(featuredPlaylistId, forKey: "root_playlist_id")
+                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ready_to_load_playlists"), object: nil)
+                
+                UserDefaults.standard.synchronize()
+            }
+
+        })
     }
     
     func loadAppSettings() {

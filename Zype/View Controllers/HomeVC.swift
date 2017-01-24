@@ -199,9 +199,7 @@ class HomeVC: CollectionContainerVC, UINavigationControllerDelegate {
         section.insets.top = 0
         section.insets.bottom = 0
         section.horizontalSpacing = 0.0
-        section.cellSize = CGSize(width: 1920, height: 700)//820  //490 //original iamge is 1450 x 630 //
-        //1920
-        
+        section.cellSize = Const.kCollectionPagerCellSize
         
         if(self.pagerVC == nil) {
             self.pagerVC = self.storyboard?.instantiateViewController(withIdentifier: "BaseCollectionVC") as! BaseCollectionVC

@@ -152,7 +152,7 @@ NSString *const DVIABPlayerErrorDomain = @"DVIABPlayerErrorDomain";
 {
     if (context == DVIABPlayerInlineAdPlayerItemStatusObservationContext) {
         AVPlayerItemStatus status = [[change objectForKey:NSKeyValueChangeNewKey] integerValue];
-        VLog(@"DVIABPlayerInlineAdPlayerItemStatusObservationContext %i", status);
+        VLog(@"DVIABPlayerInlineAdPlayerItemStatusObservationContext %li", (long)status);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             switch (status) {

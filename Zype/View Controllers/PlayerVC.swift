@@ -249,7 +249,6 @@ class PlayerVC: UIViewController, DVIABPlayerDelegate
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
-        print(self.adPlayer?.status)
         if self.adPlayer!.status == .readyToPlay
         {
             print("ready to play: \(self.adPlayer!.contentPlayerItem.currentTime().seconds)")
@@ -272,8 +271,7 @@ class PlayerVC: UIViewController, DVIABPlayerDelegate
         else if self.adPlayer!.status == .failed
         {
             print("ad player failed")
-            print(self.adPlayer!.currentItem?.error)
-            
+        
             self.removeAdPlayer()
             
             self.setupVideoPlayer()
@@ -395,7 +393,7 @@ class PlayerVC: UIViewController, DVIABPlayerDelegate
         return true
     }
     
-    func player(_ player: DVIABPlayer!, didFail playBreak:DVVideoPlayBreak!, withError:NSError ) {
+    func player(_ player: DVIABPlayer!, didFail playBreak:DVVideoPlayBreak!, withError:Error ) {
         print("did fail playback")
     }
     
